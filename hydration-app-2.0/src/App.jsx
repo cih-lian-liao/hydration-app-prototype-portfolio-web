@@ -959,25 +959,29 @@ function App() {
             <div className="video-grid">
               <div className="video-card">
                 <p className="muted"><strong>Before Prototype Video Demo:</strong></p>
-                <iframe
-                  src="https://www.youtube.com/embed/7x0UI-mkDEI"
-                  title="Before Prototype Video Demo"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="youtube-embed"
-                />
+                <div className="youtube-iframe-container">
+                  <iframe
+                    src="https://www.youtube.com/embed/7x0UI-mkDEI"
+                    title="Before Prototype Video Demo"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="youtube-embed"
+                  />
+                </div>
               </div>
               <div className="video-card">
                 <p className="muted"><strong>Redesigned Prototype Video Demo:</strong></p>
-                <iframe
-                  src="https://www.youtube.com/embed/LR49plJKIbA"
-                  title="Redesigned Prototype Video Demo"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="youtube-embed"
-                />
+                <div className="youtube-iframe-container">
+                  <iframe
+                    src="https://www.youtube.com/embed/LR49plJKIbA"
+                    title="Redesigned Prototype Video Demo"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="youtube-embed"
+                  />
+                </div>
               </div>
             </div>
           </div>
