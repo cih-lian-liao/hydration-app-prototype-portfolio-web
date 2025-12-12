@@ -423,10 +423,14 @@
   position: relative;
   width: 100%;
   max-width: 80vw;
+  min-width: 280px;
+  min-height: 315px;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
-  margin: 0 auto;
+  margin: 16px auto;
   overflow: hidden;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
 }
 
 .youtube-embed {
@@ -435,6 +439,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  min-height: 315px;
   border: none;
   border-radius: 12px;
 }

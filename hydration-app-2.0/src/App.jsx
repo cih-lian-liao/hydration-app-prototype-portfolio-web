@@ -51,6 +51,10 @@ const fadeInUp = {
   transition: { duration: 0.4, ease: 'easeOut' },
 }
 
+// YouTube video URLs
+const YOUTUBE_VIDEO_BEFORE = 'https://www.youtube.com/embed/7x0UI-mkDEI'
+const YOUTUBE_VIDEO_REDESIGNED = 'https://www.youtube.com/embed/LR49plJKIbA'
+
 function App() {
   const scrollToSection = (event, targetId) => {
     event.preventDefault()
@@ -961,9 +965,9 @@ function App() {
                 <p className="muted"><strong>Before Prototype Video Demo:</strong></p>
                 <div className="youtube-iframe-container">
                   <iframe
-                    src="https://www.youtube.com/embed/7x0UI-mkDEI"
+                    src={YOUTUBE_VIDEO_BEFORE}
                     title="Before Prototype Video Demo"
-                    frameBorder="0"
+                    style={{ border: 'none' }}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                     className="youtube-embed"
@@ -974,9 +978,9 @@ function App() {
                 <p className="muted"><strong>Redesigned Prototype Video Demo:</strong></p>
                 <div className="youtube-iframe-container">
                   <iframe
-                    src="https://www.youtube.com/embed/LR49plJKIbA"
+                    src={YOUTUBE_VIDEO_REDESIGNED}
                     title="Redesigned Prototype Video Demo"
-                    frameBorder="0"
+                    style={{ border: 'none' }}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                     className="youtube-embed"
